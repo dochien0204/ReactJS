@@ -1,0 +1,14 @@
+li {
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.button{
+    position: absolute;
+    right: 0.5rem;
+    height: 80%;
+    top: 4px;
+    padding: 0.25rem 1.5rem;
+  }
