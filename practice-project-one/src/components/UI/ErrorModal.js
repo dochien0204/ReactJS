@@ -19,7 +19,7 @@ const ErrorModal = (props) => {
         <p>{props.message}</p>
       </div>
       <footer className={classes.actions}>
-        <Button onClick={props.onSubmit}>Okay</Button>
+        <Button onClick={props.onClick}>Okay</Button>
       </footer>
     </Card>
     )
@@ -35,7 +35,7 @@ const ErrorModal = (props) => {
         <ModelOverLay
           title={props.title}
           message={props.message}
-          onClick={props.onClick}
+          onClick={props.onSubmit}
         />,
         document.getElementById("overlay-root")
       )}
