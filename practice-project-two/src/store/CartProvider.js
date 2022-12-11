@@ -5,7 +5,8 @@ import CartContext from "./cart-context";
 
 const defaultValue = {
     items: [],
-    totalAmount: 0
+    totalAmount: 0,
+    isHas: false
 };
 const cartReducer = (state, action) => {
     if(action.type === "ADD") {
@@ -28,7 +29,8 @@ const cartReducer = (state, action) => {
         
         return {
             items: updateItems,
-            totalAmount: updateTotalAmount
+            totalAmount: updateTotalAmount,
+            isHas: true
         }
     }
 
@@ -59,6 +61,7 @@ const CartProvider = (props) => {
 
     const addItemToCartHandler = (item) => {
         dispatchCartAction({type: "ADD", item: item});
+        localStorage.setItem("hasItems", "1");
     };
     
     const removeItemFromCartHandler = (id) => {

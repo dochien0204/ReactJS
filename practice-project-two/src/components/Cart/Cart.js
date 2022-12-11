@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import CartContext from "../../store/cart-context";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
@@ -9,6 +9,9 @@ const Cart = (props) => {
 
   const hasCartItems = cartCtx.items.length > 0;
 
+  useEffect(() => {
+    
+  }, [])
   const removeItemFromCartHandler = (id) => {
     cartCtx.removeItem(id);
   };
