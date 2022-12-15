@@ -1,0 +1,13 @@
+.top-menu-header {
+    display: flex;
+    width: 55%;
+    max-width: 40rem;
+    font-size: 14px;
+    color: #777575;
+    justify-content: space-between;
+}
+
+.top-menu-header p:hover {
+    cursor: pointer;
+    color: black;
+}

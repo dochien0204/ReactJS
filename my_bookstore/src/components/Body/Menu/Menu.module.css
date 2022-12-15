@@ -1,0 +1,29 @@
+.menu {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+/* .but  p {
+    color: white;
+} */
+.but p{
+ font-size: 0.9rem;
+ color: rgb(88, 86, 86);
+}
+
+.but:hover {
+    background-color: rgb(139, 138, 138);
+    cursor: pointer;
+}
+
+.but:hover > p {
+    color: white;
+}
+
+.but:last-child {
+    background-color: rgb(192, 52, 17);
+}
+
+.but:last-child p {
+    color: white;
+}

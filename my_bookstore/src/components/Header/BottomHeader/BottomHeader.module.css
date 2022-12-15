@@ -1,0 +1,162 @@
+.bottom-header {
+    width: 90%;
+    max-width: 86rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.bottom-header .title {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 6rem;
+}
+
+.title p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-right: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0.1px solid rgb(179, 177, 177);
+    border-right: none;
+}
+
+.button {
+    background-color: rgb(105, 100, 100, 0.5);
+    height: 3rem;
+    width: 3.5rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 0.1px solid rgb(179, 177, 177);
+}
+
+.button:hover {
+    background-color: rgb(134, 131, 131);
+    cursor: pointer;
+}
+
+.button:hover > .search-icon {
+    color: white;
+}
+
+.search-icon {
+    font-size: 1rem;
+    rotate: 90deg;    
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    width: 90%;
+    max-width: 85rem;
+    margin: 0 auto;
+    
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.backdrop-image {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(241, 124, 14, 0.3);
+}
+
+.image .butt-sale {
+    position: absolute;
+    bottom: 2rem;
+    left: 15rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 2px #ee8a2c38;
+    z-index: 5;
+    width: 8.5rem ;
+    background-color: rgb(255, 255, 255, 0.92);
+}
+
+.butt-sale p {
+    color: #e28204e6;
+}
+
+
+.butt-sale:hover {
+    cursor: pointer;
+    background: rgb(223, 146, 31, 0.9);
+}
+
+.butt-sale:hover > p {
+    color: white;
+}
+
+.image .butt-discount {
+    bottom: 2rem;
+    left: 5rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 2px #ee8a2c38;
+    z-index: 5;
+    width: 8.5rem;
+    background-color: rgb(255, 255, 255, 0.92);
+    position: absolute;
+    z-index: 2;
+}
+
+.butt-discount p {
+    color: #e28204e6;
+}
+
+.butt-discount:hover {
+   background: rgb(223, 146, 31, 0.9);
+}
+
+.butt-discount:hover > p {
+    color: white;
+    cursor: pointer;
+}
+
+.quotes {
+    position: absolute;
+    top: 1.5rem;
+    left: 5rem;
+    z-index: 5;
+    width: 50%;
+}
+
+.quotes h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.quotes p {
+    color: white;
+    margin-top: -5px;
+}
+
+

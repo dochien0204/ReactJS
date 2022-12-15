@@ -1,0 +1,103 @@
+.book-item {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    background-color: white;
+    width: 19%;
+    height: 350px;
+    box-shadow: 0px 2px 5px 2px #2c2c2c38;
+    border-radius: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.book-item:nth-child(n + 6) {
+    margin-top: 1.5rem;
+}
+
+.book-item .image {
+    height: 60%;
+    padding: 1.5rem;
+}
+
+.book-item:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.book-item:hover > .image > img {
+    scale: 1.05;
+    transition: 0.3s ease;
+}
+
+.book-item:hover > .info {
+    transform: translateY(-3rem);
+    transition: 0.3s ease;
+}
+
+
+.info {
+    margin: 0 1rem;
+    background-color: white;
+    padding: 0.5rem 0rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.info .category {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    color: #f75454;
+    font-size: 0.75rem;
+    margin-top: 0;
+}
+
+.info .title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #161619;
+    word-wrap: break-word;
+    margin-top: 0;
+}
+
+.author {
+    font-size: 15px;
+    color: #777575;
+    margin-top: 0;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #161619;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.image img{
+    width: 100%;
+    max-width: 17rem;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.action {
+    animation-name: hiden;
+    animation-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-white {
+    font-size: 1.5rem;
+}
+
+.icon-red {
+    color: red;
+    font-size: 1.5rem;
+}
+
+@keyframes hiden {
+    from {width: 0;}
+    to {width: 100px;}
+    
+}

@@ -1,0 +1,19 @@
+.body {
+    width: 100%;
+    margin: 0rem auto;
+    height: 100%;
+    background-color: white;
+    padding: 0 14rem;
+}
+
+.body > p {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+} 
+
+.body .h-separator {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(206, 200, 200);
+    margin-top: 0.5rem;
+}

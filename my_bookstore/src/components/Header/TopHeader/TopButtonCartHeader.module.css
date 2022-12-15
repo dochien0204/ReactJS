@@ -1,0 +1,37 @@
+.button-cart-header {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    font-size: 16px;
+    padding: 0.5rem 0.5rem;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.info {
+    margin-left: 5px;
+    text-align: center;
+    padding-top: 0.5rem;
+    height: 100%;
+    color: #777575;
+}
+
+.amount {
+    margin-left: 5px;
+}
+
+.total-amount {
+    margin-left: 5px;
+}
+
+.button-cart-header:hover > .info {
+    color: blue;
+}
+
+.button-cart-header:hover > .icon {
+    color: blue;
+}
