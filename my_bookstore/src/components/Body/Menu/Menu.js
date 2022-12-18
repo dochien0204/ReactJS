@@ -37,8 +37,6 @@ const Menu = () => {
 
   const onCatalogClickHandler = (id) => {
     bookCtx.onCatalogClick(id);
-    console.log(id);
-    console.log("Nhuw cc");
   };
 
   let content = <p>Not found any catalog</p>;

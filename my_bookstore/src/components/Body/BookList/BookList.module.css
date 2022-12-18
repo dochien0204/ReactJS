@@ -1,6 +1,11 @@
 .book-list {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.page {
+    margin-left: 50%;
+    transform: translateY(-50%);
+    margin-top: 2.5rem;
 }
