@@ -1,15 +1,18 @@
 import React from 'react';
 import Header from './components/Header/Header';
+import BookProvider from './store/BookProvider';
 
 import './App.css';
 import Body from './components/Body/Body';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className='app'>
+    <BookProvider className='app'>
       <Header />
       <Body />
-    </div>
+      <Footer />
+    </BookProvider>
   );
 }
 

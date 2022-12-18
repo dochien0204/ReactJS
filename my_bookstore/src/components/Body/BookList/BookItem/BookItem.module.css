@@ -2,7 +2,7 @@
     font-family: "Inter", Helvetica, Arial, sans-serif;
     background-color: white;
     width: 19%;
-    height: 350px;
+    height: 370px;
     box-shadow: 0px 2px 5px 2px #2c2c2c38;
     border-radius: 2px;
     box-sizing: border-box;
@@ -55,6 +55,7 @@
     color: #161619;
     word-wrap: break-word;
     margin-top: 0;
+    height: 36px;
 }
 
 .author {
