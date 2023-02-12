@@ -54,9 +54,9 @@ const BookProvider = (props) => {
     setPageNo(0);
   };
 
-  const pageClickHandler = async (pageNo) => {
+  const pageClickHandler = useCallback( async (pageNo) => {
     setPageNo(pageNo);
-  };
+  }, []);
 
   const bookContext = {
     currentUrl: currentUrl,

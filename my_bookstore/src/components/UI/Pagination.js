@@ -22,4 +22,4 @@ const Pagnation = (props) => {
   )
 }
 
-export default Pagnation
+export default React.memo(Pagnation);

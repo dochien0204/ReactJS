@@ -27,3 +27,7 @@
 .but:last-child p {
     color: white;
 }
+
+.but-active {
+    background-color: red;
+}

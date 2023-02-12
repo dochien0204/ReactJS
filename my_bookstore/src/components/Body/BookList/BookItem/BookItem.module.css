@@ -7,11 +7,16 @@
     border-radius: 2px;
     box-sizing: border-box;
     overflow: hidden;
+    margin-left: 1rem;
 }
 
 
 .book-item:nth-child(n + 6) {
     margin-top: 1.5rem;
+}
+
+.book-item:nth-child(5n + 1) {
+    margin-left: 0;
 }
 
 .book-item .image {
@@ -56,6 +61,7 @@
     word-wrap: break-word;
     margin-top: 0;
     height: 36px;
+    overflow: hidden;
 }
 
 .author {

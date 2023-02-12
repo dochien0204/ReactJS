@@ -13,9 +13,6 @@ const BottomHeader = () => {
         <FaBook className={classes.icon} />
         <p>Bookies</p>
       </div> 
-
-        
-
          <div className={classes.search}>
         <input
           type="text"
@@ -41,7 +38,7 @@ const BottomHeader = () => {
           <Button className={classes["butt-sale"]}>
             <p>Open Flash Sale</p>
           </Button>
-          <div className={classes["backdrop-image"]}></div>
+          {/* <div className={classes["backdrop-image"]}></div> */}
         </div>
     </React.Fragment>
   );

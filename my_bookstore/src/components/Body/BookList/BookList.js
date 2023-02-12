@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext } from "react";
+import React, {useEffect, useState, useContext, useCallback } from "react";
 import BookContext from "../../../store/book-context";
 import Pagnation from "../../UI/Pagination";
 import BookItem from "./BookItem/BookItem";
@@ -14,9 +14,10 @@ const BookList = () => {
     setBookList(bookCtx.bookList);
   }, item);
 
-  const pageClickHandler = (page) => {
+  const pageClickHandler = useCallback((page) => {
+
     bookCtx.onPageClick(page - 1);
-  };
+  }, []);
 
   let content = <p>Not found any books</p>;
 
