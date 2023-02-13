@@ -48,6 +48,8 @@ const BasicForm = (props) => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
     resetFirstNameInput();
+    resetLastNameInput();
+    resetEmailInput();
   };
 
   return (
