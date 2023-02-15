@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { authActions } from "../../../../store/auth";
 import {
   IoSettingsSharp,
   IoHelpCircleSharp,
@@ -7,10 +9,12 @@ import {
 } from "react-icons/io5";
 import { MdFeedback } from "react-icons/md";
 import { RiAccountPinCircleFill } from "react-icons/ri";
-
 import classes from "./Account.module.css";
 
-function Account() {
+const Account = () => {
+
+  const dispatch = useDispatch();
+
   const [isAvatarFocus, setIsAvatarFocus] = useState(false);
 
   const avatarClickHandler = (event) => {
@@ -20,7 +24,11 @@ function Account() {
 
   const onFocusOutHandler = () => {
     setIsAvatarFocus(false);
-  }
+  };
+
+  const logoutClickHandler = (event) => {
+    dispatch(authActions.logout());
+  };
 
   return (
     <div className={classes.account} onBlur={onFocusOutHandler} tabIndex="1">
@@ -55,7 +63,7 @@ function Account() {
               <p>Give Feedback</p>
               <IoChevronBackSharp className={classes["icon-greater"]} />
             </li>
-            <li className={classes.list}>
+            <li className={classes.list} onClick={logoutClickHandler}>
               <IoLogOut className={classes["icon-sharp"]} />
               <p>Log Out</p>
               <IoChevronBackSharp className={classes["icon-greater"]} />

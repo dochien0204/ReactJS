@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { IoNotificationsCircle } from "react-icons/io5";
 import classes from "./Notification.module.css";
-function Notification() {
+
+
+const Notification = () => {
+
   const [isNotifyFocus, setIsNotifyFocus] = useState(false);
   const [isRead, setIsRead] = useState(false) 
   const notifyOnClickHandler = (event) => {

@@ -4,7 +4,8 @@ import Notification from "./Notification";
 import classes from "./TopButtonHeader.module.css";
 import Account from "./Account/Account";
 
-function TopButtonHeader() {
+const TopButtonHeader = () => {
+
   return (
     <div className={classes["top-button-header"]}>
       <TopButtonCartHeader />
