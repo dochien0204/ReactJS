@@ -5,10 +5,16 @@ import Cart from './components/Cart/Cart';
 import Layout from './components/Layout/Layout';
 import Products from './components/Shop/Products';
 
+let isInitial = true
+
 function App() {
   const isVisible = useSelector(state => state.ui.cartIsVisible)
   const cart = useSelector(state => state.cart)
   useEffect(() => {
+    if (isInitial) {
+      isInitial = false
+      return
+    }
     fetch('https://react-post-3403b-default-rtdb.firebaseio.com/cart.json',{
       method: 'PUT',
       body: JSON.stringify(cart),
