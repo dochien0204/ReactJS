@@ -1,4 +1,5 @@
 .content {
+    max-width: 60rem;
     text-align: center;
     margin: 2rem auto;
 }

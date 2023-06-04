@@ -8,8 +8,10 @@
   
   .list {
     display: flex;
-    gap: 1rem;
-  }
+    gap: 2rem;
+    list-style-type: none;
+    justify-content: center;
+}
   
   .list a {
     text-decoration: none;

@@ -4,6 +4,8 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
 import RootLayout from './pages/RootLayout';
+import Product from './pages/Product';
+import ProductDetail from './pages/ProductDetail';
 
 // const routeDefinitions = createRoutesFromElements(
 //   <Route>
@@ -19,7 +21,9 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       {path: '/', element: <HomePage />},
-      {path: '/login', element: <Login />}
+      {path: '/login', element: <Login />},
+      {path: '/products', element: <Product />},
+      {path: 'products/:productId', element: <ProductDetail />},
     ],
   },
 ])
