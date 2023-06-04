@@ -1,25 +1,33 @@
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import Cart from './components/Cart/Cart';
 import Layout from './components/Layout/Layout';
 import Products from './components/Shop/Products';
+import { sendCartData, fetchCartData } from './store/cart-actions';
 
 let isInitial = true
 
 function App() {
   const isVisible = useSelector(state => state.ui.cartIsVisible)
+  const dispatch = useDispatch()
   const cart = useSelector(state => state.cart)
+
+  //Fetch product from back-end
+  useEffect(() => {
+    dispatch(fetchCartData())
+  }, [dispatch])
+
   useEffect(() => {
     if (isInitial) {
       isInitial = false
       return
+    } 
+
+    if (cart.change) {
+      dispatch(sendCartData(cart))
     }
-    fetch('https://react-post-3403b-default-rtdb.firebaseio.com/cart.json',{
-      method: 'PUT',
-      body: JSON.stringify(cart),
-    })
-  }, [cart])
+  }, [cart, dispatch])
 
   return (
     <Layout>
